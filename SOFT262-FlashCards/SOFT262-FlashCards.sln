@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOFT262-FlashCards.Android"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOFT262-FlashCards.iOS", "SOFT262-FlashCards.iOS\SOFT262-FlashCards.iOS.csproj", "{02E32F10-4FB0-4D46-8AA6-9A46CE6BA597}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOFT262-FlashCards", "SOFT262-FlashCards\SOFT262-FlashCards.csproj", "{86D4F7B2-8F50-4DEE-8C23-CC7E11B814F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SOFT262-FlashCards", "SOFT262-FlashCards\SOFT262-FlashCards.csproj", "{86D4F7B2-8F50-4DEE-8C23-CC7E11B814F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

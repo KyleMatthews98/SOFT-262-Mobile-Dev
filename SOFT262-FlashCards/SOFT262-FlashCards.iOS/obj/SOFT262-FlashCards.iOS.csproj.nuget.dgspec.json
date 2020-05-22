@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards.iOS\\SOFT262-FlashCards.iOS.csproj": {}
+    "C:\\Users\\Kyle\\Documents\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards.iOS\\SOFT262-FlashCards.iOS.csproj": {}
   },
   "projects": {
-    "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards.iOS\\SOFT262-FlashCards.iOS.csproj": {
+    "C:\\Users\\Kyle\\Documents\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards.iOS\\SOFT262-FlashCards.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards.iOS\\SOFT262-FlashCards.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\Kyle\\Documents\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards.iOS\\SOFT262-FlashCards.iOS.csproj",
         "projectName": "SOFT262-FlashCards.iOS",
-        "projectPath": "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards.iOS\\SOFT262-FlashCards.iOS.csproj",
-        "packagesPath": "C:\\Users\\Jamie\\.nuget\\packages\\",
-        "outputPath": "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards.iOS\\obj\\",
+        "projectPath": "C:\\Users\\Kyle\\Documents\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards.iOS\\SOFT262-FlashCards.iOS.csproj",
+        "packagesPath": "C:\\Users\\Kyle\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kyle\\Documents\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "D:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jamie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kyle\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj": {
-                "projectPath": "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj"
+              "C:\\Users\\Kyle\\Documents\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj": {
+                "projectPath": "C:\\Users\\Kyle\\Documents\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj"
               }
             }
           }
@@ -42,6 +42,10 @@
       "frameworks": {
         "xamarinios10": {
           "dependencies": {
+            "Microsoft.Azure.Cosmos": {
+              "target": "Package",
+              "version": "[3.9.1, )"
+            },
             "Microsoft.Azure.DocumentDB.Core": {
               "target": "Package",
               "version": "[2.10.3, )"
@@ -69,20 +73,20 @@
         }
       }
     },
-    "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj": {
+    "C:\\Users\\Kyle\\Documents\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj",
+        "projectUniqueName": "C:\\Users\\Kyle\\Documents\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj",
         "projectName": "SOFT262-FlashCards",
-        "projectPath": "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj",
-        "packagesPath": "C:\\Users\\Jamie\\.nuget\\packages\\",
-        "outputPath": "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards\\obj\\",
+        "projectPath": "C:\\Users\\Kyle\\Documents\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj",
+        "packagesPath": "C:\\Users\\Kyle\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kyle\\Documents\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jamie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kyle\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -107,6 +111,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Microsoft.Azure.Cosmos": {
+              "target": "Package",
+              "version": "[3.9.1, )"
+            },
             "Microsoft.Azure.DocumentDB.Core": {
               "target": "Package",
               "version": "[2.10.3, )"
@@ -136,7 +144,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

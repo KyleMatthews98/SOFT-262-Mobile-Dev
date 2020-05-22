@@ -12,8 +12,10 @@ namespace SOFT262_FlashCards
         public MainPage()
         {
             items = new ObservableCollection<string>() { "What's the capital of Germany?", "Who is the current UK Prime Minister?",
-                "Who won the World Cup in 1966", "What colour is an Orange?", "Who created the tech company'Apple'?", "What happens when you mix Coke and Mentos?",
-                "How many bits in a byte?", "What's the tallest mountain in the world named?", "How long should you brush your teeth for?", "What does MVVM stand for?" };
+                "Who won the World Cup in 1966", "What colour is an Orange?",
+                "Who created the tech company'Apple'?", "What happens when you mix Coke and Mentos?",
+                "How many bits in a byte?", "What's the tallest mountain in the world named?", 
+                "How long should you brush your teeth for?", "What does MVVM stand for?" };
 
             ListView lstView = new ListView();
             lstView.IsPullToRefreshEnabled = true;
