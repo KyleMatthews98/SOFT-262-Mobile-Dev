@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kyle\\Documents\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards.Android\\SOFT262-FlashCards.Android.csproj": {}
+    "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards.Android\\SOFT262-FlashCards.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kyle\\Documents\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards.Android\\SOFT262-FlashCards.Android.csproj": {
+    "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards.Android\\SOFT262-FlashCards.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kyle\\Documents\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards.Android\\SOFT262-FlashCards.Android.csproj",
+        "projectUniqueName": "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards.Android\\SOFT262-FlashCards.Android.csproj",
         "projectName": "SOFT262-FlashCards.Android",
-        "projectPath": "C:\\Users\\Kyle\\Documents\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards.Android\\SOFT262-FlashCards.Android.csproj",
-        "packagesPath": "C:\\Users\\Kyle\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kyle\\Documents\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards.Android\\obj\\",
+        "projectPath": "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards.Android\\SOFT262-FlashCards.Android.csproj",
+        "packagesPath": "C:\\Users\\Jamie\\.nuget\\packages\\",
+        "outputPath": "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Kyle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jamie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\Kyle\\Documents\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj": {
-                "projectPath": "C:\\Users\\Kyle\\Documents\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj"
+              "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj": {
+                "projectPath": "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj"
               }
             }
           }
@@ -42,13 +42,9 @@
       "frameworks": {
         "monoandroid90": {
           "dependencies": {
-            "Microsoft.Azure.Cosmos": {
+            "Microsoft.Azure.DocumentDB.Core": {
               "target": "Package",
-              "version": "[3.9.1, )"
-            },
-            "Microsoft.Extensions.Configuration.UserSecrets": {
-              "target": "Package",
-              "version": "[3.1.4, )"
+              "version": "[2.10.3, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
@@ -62,20 +58,20 @@
         }
       }
     },
-    "C:\\Users\\Kyle\\Documents\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj": {
+    "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kyle\\Documents\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj",
+        "projectUniqueName": "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj",
         "projectName": "SOFT262-FlashCards",
-        "projectPath": "C:\\Users\\Kyle\\Documents\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj",
-        "packagesPath": "C:\\Users\\Kyle\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kyle\\Documents\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards\\obj\\",
+        "projectPath": "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj",
+        "packagesPath": "C:\\Users\\Jamie\\.nuget\\packages\\",
+        "outputPath": "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Kyle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jamie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -100,13 +96,9 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
-            "Microsoft.Azure.Cosmos": {
+            "Microsoft.Azure.DocumentDB.Core": {
               "target": "Package",
-              "version": "[3.9.1, )"
-            },
-            "Microsoft.Extensions.Configuration.UserSecrets": {
-              "target": "Package",
-              "version": "[3.1.4, )"
+              "version": "[2.10.3, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -133,7 +125,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

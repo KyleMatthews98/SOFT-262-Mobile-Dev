@@ -1,16 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
-             x:Class="SOFT262_FlashCards.MainPage">
-
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SOFT262_FlashCards.MainPage" xmlns:local="clr-namespace:SOFT262_FlashCards">
+    <StackLayout Margin="20">
+        <Label Text="Revision Flashcards" FontAttributes="Bold" HorizontalOptions="Center" />
+        <!-- Set ListView.SelectionMode to None to disable selection -->
+        <ListView ItemsSource="{x:Static local:MainPage.items}" ItemSelected="OnSelection"  IsPullToRefreshEnabled="true" Refreshing="OnRefresh" SeparatorVisibility="Default" SeparatorColor="Black">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.ContextActions>
+                            <!-- CommandParameter is the command to pass to the clicked event handler. Because these are menu items, 
+                            not cells managed by the ListView, CommandParameter is neccesary to determine which 
+                            cell the context action was taken on. -->
+                            <MenuItem Clicked="OnMore" Text="More" CommandParameter="{Binding .}" />
+                            <MenuItem Clicked="OnDelete" Text="Delete" IsDestructive="true" CommandParameter="{Binding .}" />
+                        </ViewCell.ContextActions>
+                        <StackLayout Padding="15,0">
+                            <Label Text="{Binding .}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </StackLayout>
-
 </ContentPage>
