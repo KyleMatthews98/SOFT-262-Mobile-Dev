@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DocumentsD\\University Work DDrive\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards.Android\\SOFT262-FlashCards.Android.csproj": {}
+    "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards.Android\\SOFT262-FlashCards.Android.csproj": {}
   },
   "projects": {
-    "D:\\DocumentsD\\University Work DDrive\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards.Android\\SOFT262-FlashCards.Android.csproj": {
+    "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards.Android\\SOFT262-FlashCards.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DocumentsD\\University Work DDrive\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards.Android\\SOFT262-FlashCards.Android.csproj",
+        "projectUniqueName": "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards.Android\\SOFT262-FlashCards.Android.csproj",
         "projectName": "SOFT262-FlashCards.Android",
-        "projectPath": "D:\\DocumentsD\\University Work DDrive\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards.Android\\SOFT262-FlashCards.Android.csproj",
+        "projectPath": "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards.Android\\SOFT262-FlashCards.Android.csproj",
         "packagesPath": "C:\\Users\\Jamie\\.nuget\\packages\\",
-        "outputPath": "D:\\DocumentsD\\University Work DDrive\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards.Android\\obj\\",
+        "outputPath": "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "D:\\DocumentsD\\University Work DDrive\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj": {
-                "projectPath": "D:\\DocumentsD\\University Work DDrive\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj"
+              "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj": {
+                "projectPath": "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj"
               }
             }
           }
@@ -58,14 +58,14 @@
         }
       }
     },
-    "D:\\DocumentsD\\University Work DDrive\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj": {
+    "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DocumentsD\\University Work DDrive\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj",
+        "projectUniqueName": "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj",
         "projectName": "SOFT262-FlashCards",
-        "projectPath": "D:\\DocumentsD\\University Work DDrive\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj",
+        "projectPath": "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards\\SOFT262-FlashCards.csproj",
         "packagesPath": "C:\\Users\\Jamie\\.nuget\\packages\\",
-        "outputPath": "D:\\DocumentsD\\University Work DDrive\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards\\obj\\",
+        "outputPath": "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Microsoft\\Xamarin\\NuGet\\"
@@ -96,13 +96,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
-<<<<<<< Updated upstream
-=======
             "Microsoft.Azure.DocumentDB.Core": {
               "target": "Package",
               "version": "[2.10.3, )"
             },
->>>>>>> Stashed changes
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -111,11 +108,11 @@
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.3.1, )"
+              "version": "[1.5.3.2, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.4.0.991265, )"
+              "version": "[4.6.0.800, )"
             }
           },
           "imports": [

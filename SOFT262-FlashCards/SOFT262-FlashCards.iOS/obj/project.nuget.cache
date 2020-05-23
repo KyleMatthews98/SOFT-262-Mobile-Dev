@@ -1,12 +1,8 @@
 {
   "version": 2,
-<<<<<<< Updated upstream
-  "dgSpecHash": "t79tbEfajRrdhh8Z+qKbvo+qSFEPPjUwdZjVIuuwAP4zoZ4y869NuNpbH/PA6T2iFnTiEeuIuWq/am5Y+0eRhw==",
-=======
-  "dgSpecHash": "65TwqK5+kpNEbMCR8XhEfoZgMEUleLaW5tej6ZUj5qEUCL4d/663Cb+Y04RAM5w5YMt4bxYsKJvFLUoqiAYQag==",
->>>>>>> Stashed changes
+  "dgSpecHash": "onZ5UnHY6vEfoqKzFiy0gZYKY0aVT+q6HU+Dh7ep3GSZGhVcZufi64XTsw4v1W6XYAPWZeQa7TMTNUy/51WyRw==",
   "success": true,
-  "projectFilePath": "D:\\DocumentsD\\University Work DDrive\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards.iOS\\SOFT262-FlashCards.iOS.csproj",
+  "projectFilePath": "D:\\Downloads\\SOFT-262-Mobile-Dev-master\\SOFT-262-Mobile-Dev-master\\SOFT262-FlashCards\\SOFT262-FlashCards.iOS\\SOFT262-FlashCards.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jamie\\.nuget\\packages\\microsoft.azure.documentdb.core\\2.10.3\\microsoft.azure.documentdb.core.2.10.3.nupkg.sha512",
     "C:\\Users\\Jamie\\.nuget\\packages\\microsoft.netcore.platforms\\1.0.1\\microsoft.netcore.platforms.1.0.1.nupkg.sha512",
