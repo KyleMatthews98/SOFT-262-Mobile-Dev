@@ -42,6 +42,13 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+<<<<<<< Updated upstream
+=======
+            "Microsoft.Azure.DocumentDB.Core": {
+              "target": "Package",
+              "version": "[2.10.3, )"
+            },
+>>>>>>> Stashed changes
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",

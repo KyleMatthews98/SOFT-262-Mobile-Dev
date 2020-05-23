@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "t79tbEfajRrdhh8Z+qKbvo+qSFEPPjUwdZjVIuuwAP4zoZ4y869NuNpbH/PA6T2iFnTiEeuIuWq/am5Y+0eRhw==",
+=======
+  "dgSpecHash": "65TwqK5+kpNEbMCR8XhEfoZgMEUleLaW5tej6ZUj5qEUCL4d/663Cb+Y04RAM5w5YMt4bxYsKJvFLUoqiAYQag==",
+>>>>>>> Stashed changes
   "success": true,
   "projectFilePath": "D:\\DocumentsD\\University Work DDrive\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards.iOS\\SOFT262-FlashCards.iOS.csproj",
   "expectedPackageFiles": [

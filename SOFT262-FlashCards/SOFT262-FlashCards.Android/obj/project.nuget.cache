@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "854/Zrq4v5kKjIJtTToYF4Bqo6KMEaD/z9SlSJ0DtTj2rcj5Ob1ArUI8PAVFR9ocIN4qWwKDxssXFfYwx/PH4A==",
+=======
+  "dgSpecHash": "KEGABX5tmywJQBDNObtMV5/KerqtVsaltNeAhx6vh6vmJY4iDtYaFdikS1Jx8J2pcqayeYNAYqU1OKJLGu283g==",
+>>>>>>> Stashed changes
   "success": true,
   "projectFilePath": "D:\\DocumentsD\\University Work DDrive\\SOFT-262-Mobile-Dev\\SOFT262-FlashCards\\SOFT262-FlashCards.Android\\SOFT262-FlashCards.Android.csproj",
   "expectedPackageFiles": [
