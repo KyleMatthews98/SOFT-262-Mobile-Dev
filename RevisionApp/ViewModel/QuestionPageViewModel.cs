@@ -1,8 +1,6 @@
-﻿using System;
+﻿using RevisionApp.Models;
 using System.Collections.ObjectModel;
-using System.ComponentModel.Design;
 using System.Windows.Input;
-using RevisionApp.Models;
 using Xamarin.Forms;
 
 namespace RevisionApp.ViewModel
@@ -14,7 +12,7 @@ namespace RevisionApp.ViewModel
         public ICommand RemoveCardCommand => new Command(Removecard);
         public static ObservableCollection<QnA_Model> QuestionList { get; set; }
 
-       
+
         public string Question { get; set; }
         public string Difficulty { get; set; }
         public string Answer { get; set; }
@@ -43,12 +41,12 @@ namespace RevisionApp.ViewModel
 
         public void AddQuestAnswers()
         {
-            QuestionList.Add(new QnA_Model { Question = Question , Difficulty = Difficulty , Answer = Answer });
+            QuestionList.Add(new QnA_Model { Question = Question, Difficulty = Difficulty, Answer = Answer });
         }
 
         public void Removecard()
         {
-           
+
         }
 
     }

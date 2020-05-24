@@ -1,22 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using RevisionApp.Models;
+﻿using RevisionApp.Models;
 using RevisionApp.ViewModel;
+using System;
 using Xamarin.Forms;
 
 namespace RevisionApp.Views
 {
     public partial class QuestionPage : ContentPage
     {
-       
-        
+
+
         public QuestionPage()
         {
 
             BindingContext = new QuestionPageViewModel();
             InitializeComponent();
-           
+
         }
 
         private async void OnItemSelected(Object sender, ItemTappedEventArgs e)

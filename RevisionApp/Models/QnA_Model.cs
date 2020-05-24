@@ -1,5 +1,4 @@
-﻿using System;
-namespace RevisionApp.Models
+﻿namespace RevisionApp.Models
 {
     public class QnA_Model
     {
