@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RevisionApp.Views.QuestionPage"
-             
+             xmlns:d="clr-namespace:RevisionApp.ViewModel"
              Title="RevisionApp">
 
     <StackLayout>
@@ -16,7 +16,7 @@
 
 
         <ListView x:Name= "questList"
-                   ItemsSource="{Binding QuestionList}"
+                   ItemsSource="{Binding Source={x:Static d:QuestionPageViewModel.QuestionList}}"
                    SelectedItem="{Binding SelectedCard}"
                    HasUnevenRows="true"
                    SeparatorVisibility="Default" SeparatorColor="Black"
@@ -24,6 +24,13 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
+                        <ViewCell.ContextActions>
+                            <!-- CommandParameter is the command to pass to the clicked event handler. Because these are menu items, 
+                            not cells managed by the ListView, CommandParameter is neccesary to determine which 
+                            cell the context action was taken on. -->
+                            <MenuItem Clicked="OnMore" Text="More" CommandParameter="{Binding .}" />
+                            <MenuItem Clicked="OnDelete" Text="Delete" IsDestructive="true" CommandParameter="{Binding .}" />
+                        </ViewCell.ContextActions>
                         <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>

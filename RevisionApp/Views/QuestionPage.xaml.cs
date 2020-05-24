@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using RevisionApp.Models;
 using RevisionApp.ViewModel;
 using Xamarin.Forms;
@@ -8,10 +9,14 @@ namespace RevisionApp.Views
 {
     public partial class QuestionPage : ContentPage
     {
+       
+        
         public QuestionPage()
         {
-            InitializeComponent();
+
             BindingContext = new QuestionPageViewModel();
+            InitializeComponent();
+           
         }
 
         private async void OnItemSelected(Object sender, ItemTappedEventArgs e)
@@ -20,5 +25,16 @@ namespace RevisionApp.Views
             await Navigation.PushAsync(new AnswerPage(mydetails.Question, mydetails.Answer));
         }
 
+        void OnMore(object sender, EventArgs e)
+        {
+            var item = (MenuItem)sender;
+            DisplayAlert("More Context Action", item.CommandParameter + " more context action", "OK");
+        }
+
+        void OnDelete(object sender, EventArgs e)
+        {
+            var questionList = (MenuItem)sender;
+            QuestionPageViewModel.QuestionList.Remove((QnA_Model)questionList.CommandParameter);
+        }
     }
 }

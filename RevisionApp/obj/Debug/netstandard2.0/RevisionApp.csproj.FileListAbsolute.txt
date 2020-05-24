@@ -31,3 +31,21 @@ C:\Users\Kyle\Documents\git\SOFT-262-Mobile-Dev\RevisionApp\obj\Debug\netstandar
 C:\Users\Kyle\Documents\git\SOFT-262-Mobile-Dev\RevisionApp\obj\Debug\netstandard2.0\ref\RevisionApp.dll
 C:\Users\Kyle\Documents\git\SOFT-262-Mobile-Dev\RevisionApp\obj\Debug\netstandard2.0\RevisionApp.pdb
 C:\Users\Kyle\Documents\git\SOFT-262-Mobile-Dev\RevisionApp\obj\Debug\netstandard2.0\Views\AddQuestions.xaml.g.cs
+D:\DocumentsD\University Work DDrive\SOFT-262-Mobile-Dev\RevisionApp\bin\Debug\netstandard2.0\RevisionApp.deps.json
+D:\DocumentsD\University Work DDrive\SOFT-262-Mobile-Dev\RevisionApp\bin\Debug\netstandard2.0\RevisionApp.dll
+D:\DocumentsD\University Work DDrive\SOFT-262-Mobile-Dev\RevisionApp\bin\Debug\netstandard2.0\ref\RevisionApp.dll
+D:\DocumentsD\University Work DDrive\SOFT-262-Mobile-Dev\RevisionApp\bin\Debug\netstandard2.0\RevisionApp.pdb
+D:\DocumentsD\University Work DDrive\SOFT-262-Mobile-Dev\RevisionApp\obj\Debug\netstandard2.0\RevisionApp.csprojAssemblyReference.cache
+D:\DocumentsD\University Work DDrive\SOFT-262-Mobile-Dev\RevisionApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\DocumentsD\University Work DDrive\SOFT-262-Mobile-Dev\RevisionApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\DocumentsD\University Work DDrive\SOFT-262-Mobile-Dev\RevisionApp\obj\Debug\netstandard2.0\Views\AddQuestions.xaml.g.cs
+D:\DocumentsD\University Work DDrive\SOFT-262-Mobile-Dev\RevisionApp\obj\Debug\netstandard2.0\Views\AnswerPage.xaml.g.cs
+D:\DocumentsD\University Work DDrive\SOFT-262-Mobile-Dev\RevisionApp\obj\Debug\netstandard2.0\Views\HomePage.xaml.g.cs
+D:\DocumentsD\University Work DDrive\SOFT-262-Mobile-Dev\RevisionApp\obj\Debug\netstandard2.0\Views\QuestionPage.xaml.g.cs
+D:\DocumentsD\University Work DDrive\SOFT-262-Mobile-Dev\RevisionApp\obj\Debug\netstandard2.0\RevisionApp.AssemblyInfoInputs.cache
+D:\DocumentsD\University Work DDrive\SOFT-262-Mobile-Dev\RevisionApp\obj\Debug\netstandard2.0\RevisionApp.AssemblyInfo.cs
+D:\DocumentsD\University Work DDrive\SOFT-262-Mobile-Dev\RevisionApp\obj\Debug\netstandard2.0\RevisionApp.csproj.CoreCompileInputs.cache
+D:\DocumentsD\University Work DDrive\SOFT-262-Mobile-Dev\RevisionApp\obj\Debug\netstandard2.0\XamlC.stamp
+D:\DocumentsD\University Work DDrive\SOFT-262-Mobile-Dev\RevisionApp\obj\Debug\netstandard2.0\RevisionApp.dll
+D:\DocumentsD\University Work DDrive\SOFT-262-Mobile-Dev\RevisionApp\obj\Debug\netstandard2.0\ref\RevisionApp.dll
+D:\DocumentsD\University Work DDrive\SOFT-262-Mobile-Dev\RevisionApp\obj\Debug\netstandard2.0\RevisionApp.pdb

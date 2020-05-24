@@ -12,8 +12,9 @@ namespace RevisionApp.ViewModel
         public ICommand addNewQuestionCommand => new Command(AddQuestAnswers);
 
         public ICommand RemoveCardCommand => new Command(Removecard);
-        public ObservableCollection<QnA_Model> QuestionList { get; set; }
+        public static ObservableCollection<QnA_Model> QuestionList { get; set; }
 
+       
         public string Question { get; set; }
         public string Difficulty { get; set; }
         public string Answer { get; set; }
