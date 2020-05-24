@@ -33,6 +33,13 @@ namespace RevisionApp.Views
         {
             var questionList = (MenuItem)sender;
             QuestionPageViewModel.QuestionList.Remove((QnA_Model)questionList.CommandParameter);
+            DisplayAlert("Deleted", questionList.CommandParameter + "Deleted Card", "ok");
+        }
+
+        private void OnEdit(object sender, EventArgs e)
+        {
+            var questionList = (MenuItem)sender;
+            QuestionPageViewModel.QuestionList.ed
         }
     }
 }

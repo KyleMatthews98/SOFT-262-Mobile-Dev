@@ -7,11 +7,21 @@
 
     <StackLayout>
 
+        <Label Text="Click and hold to EDIT or Remove cards" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+
         <Entry Placeholder="Question" Text="{Binding Question}"></Entry>
         <Entry Placeholder="Difficulty" Text="{Binding Difficulty}"></Entry>
         <Entry Placeholder="Answer" Text="{Binding Answer}"></Entry>
         <Button Text="Add" Command="{Binding addNewQuestionCommand}"></Button>
         <Button Text="Remove" Command="{Binding RemoveCard}"></Button>
+        
+      
+
+
+
+
 
 
 
