@@ -4,8 +4,20 @@
              x:Class="RevisionApp.Views.QuestionPage"
              
              Title="RevisionApp">
-    <ContentPage.Content>
-        <ListView ItemsSource="{Binding QuestionList}"
+
+    <StackLayout>
+
+        <Entry Placeholder="Question" Text="{Binding Question}"></Entry>
+        <Entry Placeholder="Difficulty" Text="{Binding Difficulty}"></Entry>
+        <Entry Placeholder="Answer" Text="{Binding Answer}"></Entry>
+        <Button Text="Add" Command="{Binding addNewQuestionCommand}"></Button>
+        <Button Text="Remove" Command="{Binding RemoveCard}"></Button>
+
+
+
+        <ListView x:Name= "questList"
+                   ItemsSource="{Binding QuestionList}"
+                   SelectedItem="{Binding SelectedCard}"
                    HasUnevenRows="true"
                    SeparatorVisibility="Default" SeparatorColor="Black"
                    ItemTapped="OnItemSelected">
@@ -37,5 +49,54 @@
         </ListView>
 
 
+
+
+
+
+
+
+
+
+
+    </StackLayout>
+
+
+    <ContentPage.Content>
+        
+
+        <!--<ListView x:Name= "questList"
+                   ItemsSource="{Binding QuestionList}"
+                   HasUnevenRows="true"
+                   SeparatorVisibility="Default" SeparatorColor="Black"
+                   ItemTapped="OnItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+
+                            <Label Grid.Column="1"
+                                       Text="{Binding Question}"
+                                       VerticalOptions="End"/>
+                            <Label Grid.Column="1"
+                                       Grid.Row="1"
+                                       VerticalOptions="Start"
+                                       Text="{Binding Difficulty, StringFormat='Difficulty = {0:N}'}"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>-->
+
+
     </ContentPage.Content>
+    
 </ContentPage>

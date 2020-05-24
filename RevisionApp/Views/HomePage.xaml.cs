@@ -21,5 +21,10 @@ namespace RevisionApp.Views
         {
 
         }
+
+        private void btnView_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
