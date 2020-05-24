@@ -7,7 +7,7 @@
 
     <StackLayout>
 
-        <Label Text="Click and hold a flashcard to Remove it" 
+        <Label Text="Click and hold a flashcard to delete it" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
 
