@@ -7,7 +7,7 @@
 
     <StackLayout>
 
-        <Label Text="Click and hold to EDIT or Remove cards" 
+        <Label Text="Click and hold a flashcard to Remove it" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
 
@@ -15,19 +15,12 @@
         <Entry Placeholder="Difficulty" Text="{Binding Difficulty}"></Entry>
         <Entry Placeholder="Answer" Text="{Binding Answer}"></Entry>
         <Button Text="Add" Command="{Binding addNewQuestionCommand}"></Button>
-        <Button Text="Remove" Command="{Binding RemoveCard}"></Button>
-        
-      
-
-
-
-
-
+        <Button Text="Edit" Command="{Binding editNewQuestionCommand}"></Button>
 
 
         <ListView x:Name= "questList"
                    ItemsSource="{Binding Source={x:Static d:QuestionPageViewModel.QuestionList}}"
-                   SelectedItem="{Binding SelectedCard}"
+                   SelectedItem="{Binding SelectedQuestion}"
                    HasUnevenRows="true"
                    SeparatorVisibility="Default" SeparatorColor="Black"
                    ItemTapped="OnItemSelected">
@@ -38,7 +31,7 @@
                             <!-- CommandParameter is the command to pass to the clicked event handler. Because these are menu items, 
                             not cells managed by the ListView, CommandParameter is neccesary to determine which 
                             cell the context action was taken on. -->
-                            <MenuItem Clicked="OnMore" Text="More" CommandParameter="{Binding .}" />
+                           
                             <MenuItem Clicked="OnDelete" Text="Delete" IsDestructive="true" CommandParameter="{Binding .}" />
                         </ViewCell.ContextActions>
                         <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">

@@ -19,27 +19,18 @@ namespace RevisionApp.Views
 
         private async void OnItemSelected(Object sender, ItemTappedEventArgs e)
         {
-            var mydetails = e.Item as QnA_Model;
-            await Navigation.PushAsync(new AnswerPage(mydetails.Question, mydetails.Answer));
+            var selected = e.Item as QnA_Model;
+            await Navigation.PushAsync(new AnswerPage(selected.Question, selected.Answer));
         }
 
-        void OnMore(object sender, EventArgs e)
-        {
-            var item = (MenuItem)sender;
-            DisplayAlert("More Context Action", item.CommandParameter + " more context action", "OK");
-        }
 
         void OnDelete(object sender, EventArgs e)
         {
             var questionList = (MenuItem)sender;
             QuestionPageViewModel.QuestionList.Remove((QnA_Model)questionList.CommandParameter);
-            DisplayAlert("Deleted", questionList.CommandParameter + "Deleted Card", "ok");
+            DisplayAlert("Deleted Flashcard","The selected Flashcard has been deleted!", "OK");
         }
 
-        private void OnEdit(object sender, EventArgs e)
-        {
-            var questionList = (MenuItem)sender;
-            QuestionPageViewModel.QuestionList.ed
-        }
+      
     }
 }

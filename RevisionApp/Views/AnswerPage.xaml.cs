@@ -10,8 +10,6 @@ namespace RevisionApp.Views
             InitializeComponent();
 
             QuestionShow.Text = Question;
-
-
             AnswerShow.Text = Answer;
         }
 
