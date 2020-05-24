@@ -18,7 +18,6 @@ namespace RevisionApp.Views
         {
             var mydetails = e.Item as QnA_Model;
             await Navigation.PushAsync(new AnswerPage(mydetails.Question, mydetails.Answer));
-
         }
 
     }

@@ -604,23 +604,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jamie\\.nuget\\packages\\": {},
-    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Kyle\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DocumentsD\\University Work DDrive\\RevisionApp\\RevisionApp\\RevisionApp.csproj",
+      "projectUniqueName": "C:\\Users\\Kyle\\Documents\\git\\SOFT-262-Mobile-Dev\\RevisionApp\\RevisionApp.csproj",
       "projectName": "RevisionApp",
-      "projectPath": "D:\\DocumentsD\\University Work DDrive\\RevisionApp\\RevisionApp\\RevisionApp.csproj",
-      "packagesPath": "C:\\Users\\Jamie\\.nuget\\packages\\",
-      "outputPath": "D:\\DocumentsD\\University Work DDrive\\RevisionApp\\RevisionApp\\obj\\",
+      "projectPath": "C:\\Users\\Kyle\\Documents\\git\\SOFT-262-Mobile-Dev\\RevisionApp\\RevisionApp.csproj",
+      "packagesPath": "C:\\Users\\Kyle\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kyle\\Documents\\git\\SOFT-262-Mobile-Dev\\RevisionApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jamie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kyle\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -670,7 +670,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

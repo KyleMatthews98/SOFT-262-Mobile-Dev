@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
 
 namespace RevisionApp.Views
 {
@@ -9,9 +10,19 @@ namespace RevisionApp.Views
             InitializeComponent();
 
             QuestionShow.Text = Question;
-            AnswerShow.Text = Answer;
-           
 
+
+
+
+            // AnswerShow.Text = Answer;
+
+
+
+        }
+
+        private void btnShow_Clicked(object sender, EventArgs e)
+        {
+            
         }
     }
 }
