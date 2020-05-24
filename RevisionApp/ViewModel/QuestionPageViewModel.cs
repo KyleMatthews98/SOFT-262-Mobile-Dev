@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Windows.Input;
 using RevisionApp.Models;
+using Xamarin.Forms;
 
 namespace RevisionApp.ViewModel
 {
@@ -21,9 +23,10 @@ namespace RevisionApp.ViewModel
             QuestionList.Add(new QnA_Model { Question = "What is the capital city of Italy?", Difficulty = "Easy", Answer = "Rome" });
             QuestionList.Add(new QnA_Model { Question = "What is the capital city of Canada?", Difficulty = "Hard", Answer = "Ottawa" });
             QuestionList.Add(new QnA_Model { Question = "What is the capital city of Russia?", Difficulty = "Easy", Answer = "Moscow" });
-           
+
 
 
         }
+
     }
 }

@@ -9,7 +9,7 @@
 
             <Button x:Name="btnShow" 
                     Text="Show Answer" 
-                    Clicked="Button_Clicked">  
+                    Clicked="btnShow_Clicked">  
             </Button>
             
         </StackLayout>
