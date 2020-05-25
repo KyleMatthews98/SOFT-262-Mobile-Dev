@@ -23,7 +23,7 @@ namespace RevisionApp.Views
         {
             var questionList = (MenuItem)sender;
             QuestionPageViewModel.QuestionList.Remove((QnA_Model)questionList.CommandParameter);
-            DisplayAlert("Deleted Flashcard","The selected Flashcard has been deleted!", "OK");
+            DisplayAlert("Deleted Flashcard", "The selected Flashcard has been deleted!", "OK");
         }
 
         async void show_clicked(object sender, EventArgs e)

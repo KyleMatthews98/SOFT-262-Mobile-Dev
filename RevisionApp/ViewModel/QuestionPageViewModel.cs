@@ -3,9 +3,6 @@ using System.Collections.ObjectModel;
 using System.Windows.Input;
 using Xamarin.Forms;
 
-using RevisionApp.ViewModel;
-using System;
-
 
 namespace RevisionApp.ViewModel
 {
@@ -14,7 +11,7 @@ namespace RevisionApp.ViewModel
         public ICommand addNewQuestionCommand => new Command(AddQuestAnswers);
 
         public ICommand editNewQuestionCommand => new Command(EditQuestion);
-     
+
         public static ObservableCollection<QnA_Model> QuestionList { get; set; }
 
 
@@ -46,7 +43,7 @@ namespace RevisionApp.ViewModel
 
         public void AddQuestAnswers()
         {
-            
+
             QnA_Model newQuestionAdd = new QnA_Model { Question = Question, Difficulty = Difficulty, Answer = Answer };
             QuestionList.Add(newQuestionAdd);
             int indexOfAddedQuestion = QuestionList.IndexOf(newQuestionAdd);
@@ -65,7 +62,7 @@ namespace RevisionApp.ViewModel
             {
                 QuestionList.Move(indexOfDeletedQuestion, indexOfNewQuestion);
             }
-            else 
+            else
             {
                 await App.Current.MainPage.DisplayAlert("No Flashcard Selected", "You must select a flashcard to edit!", "Gotcha!");
             }

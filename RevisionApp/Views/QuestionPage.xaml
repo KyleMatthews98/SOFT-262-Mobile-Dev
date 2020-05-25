@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RevisionApp.Views.QuestionPage"
              xmlns:d="clr-namespace:RevisionApp.ViewModel"
-             Title="RevisionApp">
+             Title="Flashcard Questions Page">
 
     <StackLayout>
 
@@ -15,7 +15,7 @@
         <Entry Placeholder="Difficulty" Text="{Binding Difficulty}"></Entry>
         <Entry Placeholder="Answer" Text="{Binding Answer}"></Entry>
         <Button Text="Add" Command="{Binding addNewQuestionCommand}"></Button>
-        <Button Text="Edit" Command="{Binding editNewQuestionCommand}"></Button>
+        <Button Text="Edit Selected Card with Details Above" Command="{Binding editNewQuestionCommand}"></Button>
 
 
         <ListView x:Name= "questList"
@@ -55,7 +55,7 @@
                                     Grid.Column="1"
                                     Grid.RowSpan="2"
                                     HorizontalOptions="End"
-                                    Text="Show"  Command="{Binding OnItemTapped}" Clicked="show_clicked"  CommandParameter="{Binding .}"></Button>
+                                    Text="Answer"  Command="{Binding OnItemTapped}" Clicked="show_clicked"  CommandParameter="{Binding .}"></Button>
                             
                             <Label Grid.Column="0"
                                      Grid.Row="1"
