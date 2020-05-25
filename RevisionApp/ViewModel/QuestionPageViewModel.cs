@@ -27,8 +27,7 @@ namespace RevisionApp.ViewModel
 
         public QnA_Model SelectedQuestion { get; set; }
 
-        string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "temp.txt");
-
+       
         public QuestionPageViewModel()
         {
 
@@ -49,6 +48,29 @@ namespace RevisionApp.ViewModel
 
         }
 
+        public void WriteToFile()
+        {
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            string FileName = Path.Combine(path, "myfile.txt");
+
+            using (var writer = new StreamWriter(FileName, true))
+            {
+                writer.WriteLine("test");
+            }
+        }
+
+        public void ReadFromFile()
+        {
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            string FileName = Path.Combine(path, "myfile.txt");
+
+            using (var sr = new StreamReader(FileName))
+            {
+                string content = sr.ReadToEnd();
+                System.Diagnostics.Debug.WriteLine(content);
+            }
+        }
+
         public void AddQuestAnswers()
         {
         
@@ -56,8 +78,14 @@ namespace RevisionApp.ViewModel
             QuestionList.Add(newQuestionAdd);
             int indexOfAddedQuestion = QuestionList.IndexOf(newQuestionAdd);
             QuestionList.Move(indexOfAddedQuestion, 0);
-            File.WriteAllText(fileName, Question + Difficulty + Answer);
 
+            //string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "temp.txt");
+           
+
+            
+          //  File.WriteAllText(fileName, Question + Difficulty + Answer);
+
+           
 
 
         }
@@ -102,6 +130,7 @@ namespace RevisionApp.ViewModel
 
         public ICommand RefreshCommand
         {
+
             get
             {
                 return new Command(() =>
@@ -109,8 +138,18 @@ namespace RevisionApp.ViewModel
                     IsRefreshing = true;
 
                     var output = new Label { Text = "" };
-                    output.Text = File.ReadAllText(fileName);
+                    // output.Text = File.ReadAllText(fileName);
 
+
+                    string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+                    string FileName = Path.Combine(path, "myfile.txt");
+
+                    using (var sr = new StreamReader(FileName))
+                    {
+                        string content = sr.ReadToEnd();
+                        System.Diagnostics.Debug.WriteLine(content);
+                        output.Text = content;
+                    }
 
                     //StreamReader sr; // Creates StreamReader
                     //string Question , Difficulty , Answer;
