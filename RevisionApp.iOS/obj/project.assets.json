@@ -1051,11 +1051,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kyle\\Documents\\git\\new\\SOFT-262-Mobile-Dev\\RevisionApp.iOS\\RevisionApp.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Kyle\\Documents\\new\\SOFT-262-Mobile-Dev\\RevisionApp.iOS\\RevisionApp.iOS.csproj",
       "projectName": "RevisionApp.iOS",
-      "projectPath": "C:\\Users\\Kyle\\Documents\\git\\new\\SOFT-262-Mobile-Dev\\RevisionApp.iOS\\RevisionApp.iOS.csproj",
+      "projectPath": "C:\\Users\\Kyle\\Documents\\new\\SOFT-262-Mobile-Dev\\RevisionApp.iOS\\RevisionApp.iOS.csproj",
       "packagesPath": "C:\\Users\\Kyle\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kyle\\Documents\\git\\new\\SOFT-262-Mobile-Dev\\RevisionApp.iOS\\obj\\",
+      "outputPath": "C:\\Users\\Kyle\\Documents\\new\\SOFT-262-Mobile-Dev\\RevisionApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1076,8 +1076,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Kyle\\Documents\\git\\new\\SOFT-262-Mobile-Dev\\RevisionApp\\RevisionApp.csproj": {
-              "projectPath": "C:\\Users\\Kyle\\Documents\\git\\new\\SOFT-262-Mobile-Dev\\RevisionApp\\RevisionApp.csproj"
+            "C:\\Users\\Kyle\\Documents\\new\\SOFT-262-Mobile-Dev\\RevisionApp\\RevisionApp.csproj": {
+              "projectPath": "C:\\Users\\Kyle\\Documents\\new\\SOFT-262-Mobile-Dev\\RevisionApp\\RevisionApp.csproj"
             }
           }
         }

@@ -44,11 +44,16 @@ namespace RevisionApp.ViewModel
 
         public void AddQuestAnswers()
         {
-
+        
             QnA_Model newQuestionAdd = new QnA_Model { Question = Question, Difficulty = Difficulty, Answer = Answer };
             QuestionList.Add(newQuestionAdd);
             int indexOfAddedQuestion = QuestionList.IndexOf(newQuestionAdd);
             QuestionList.Move(indexOfAddedQuestion, 0);
+
+            StreamWriter swriter = new StreamWriter(@"C:\Users\Kyle\Documents\new\SOFT-262-Mobile-Dev\RevisionApp\Storage\Qa.txt");
+            swriter.WriteLine("yes");
+            swriter.Close();
+
         }
 
         public async void EditQuestion()
@@ -71,15 +76,15 @@ namespace RevisionApp.ViewModel
 
         public void Refresh()
         {
-            StreamReader sr; // Creates StreamReader
-            string Question , Difficulty , Answer;
-            sr = File.OpenText("QuestionsAnswers.txt");
-            while (sr.Peek() != -1) //Continue whiel end of file has not been reached
-            {
-                Question + Difficulty + Answer = sr.ReadLine;
-                QnA_Model newQuestionEdit = new QnA_Model { Question = Question, Difficulty = Difficulty, Answer = Answer };
-            }
-            sr.Close(); // Close stream reader
+            //StreamReader sr; // Creates StreamReader
+            //string Question , Difficulty , Answer;
+            //sr = File.OpenText("QuestionsAnswers.txt");
+            //while (sr.Peek() != -1) //Continue whiel end of file has not been reached
+            //{
+            //    Question + Difficulty + Answer = sr.ReadLine;
+            //    QnA_Model newQuestionEdit = new QnA_Model { Question = Question, Difficulty = Difficulty, Answer = Answer };
+            //}
+            //sr.Close(); // Close stream reader
 
         }
 

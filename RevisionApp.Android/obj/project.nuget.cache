@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NyTcuMk++PJMvRbWwSSdLJDLXz0ellFTAhgLgCMiQaeo3pHrMtxJTmiMSuORfEjOXBdBiBJG8z4cAiZ0yjh5kg==",
+  "dgSpecHash": "wga3b1VkKdPgQjn0ez3sbh1FC+oSNQl4mw68Byt1knFaj3OylncPgyg/t6MZ8LS7ONgCRbowOz536v7suPQu7g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kyle\\Documents\\git\\new\\SOFT-262-Mobile-Dev\\RevisionApp.Android\\RevisionApp.Android.csproj",
+  "projectFilePath": "C:\\Users\\Kyle\\Documents\\new\\SOFT-262-Mobile-Dev\\RevisionApp.Android\\RevisionApp.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kyle\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
