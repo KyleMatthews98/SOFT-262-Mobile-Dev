@@ -23,7 +23,7 @@ namespace RevisionApp.Views {
         private global::Xamarin.Forms.Label Output;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.ListView questList;
+        public global::Xamarin.Forms.ListView questList;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {

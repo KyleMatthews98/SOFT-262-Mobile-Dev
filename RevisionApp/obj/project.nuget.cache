@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "dTW3+TvomJ3OM9PrNgCMpx9pUePEG+Iv1R4DCyDeGlfJ8pm3b9LvvW8kkmbqZTgFZBmU/h0q04u83/nyG1w7ig==",
+  "dgSpecHash": "hLQpVVzem2Dl8tVnutKNgL3IQT/Y8rkW9Xmz8/hslhU1IDiO/PqVmeeqgQUY9N6QMGCaeDB+wiCgDljDucVUNg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kyle\\Documents\\new\\SOFT-262-Mobile-Dev\\RevisionApp\\RevisionApp.csproj",
+  "projectFilePath": "D:\\DocumentsD\\University Work DDrive\\SOFT-262-Mobile-Dev\\RevisionApp\\RevisionApp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Kyle\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Kyle\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Kyle\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
-    "C:\\Users\\Kyle\\.nuget\\packages\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512"
+    "C:\\Users\\Jamie\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Jamie\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Jamie\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "D:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "D:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512"
   ],
   "logs": []
 }

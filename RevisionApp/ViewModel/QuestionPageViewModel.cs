@@ -4,14 +4,19 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using System.IO;
 using System;
+using RevisionApp.Views;
+using System.ComponentModel;
 
 namespace RevisionApp.ViewModel
 {
-    public class QuestionPageViewModel
+    public class QuestionPageViewModel : INotifyPropertyChanged
     {
+        public event PropertyChangedEventHandler PropertyChanged;
         public ICommand addNewQuestionCommand => new Command(AddQuestAnswers);
 
         public ICommand editNewQuestionCommand => new Command(EditQuestion);
+
+    
 
         public static ObservableCollection<QnA_Model> QuestionList { get; set; }
 
@@ -39,7 +44,7 @@ namespace RevisionApp.ViewModel
                 new QnA_Model { Question = "What is the capital city of Russia?", Difficulty = "Easy", Answer = "Moscow" }
             };
 
-
+            
 
 
         }
@@ -75,24 +80,55 @@ namespace RevisionApp.ViewModel
             }
         }
 
-        public void Refresh()
+        private bool _isRefreshing = false;
+
+       
+
+        public bool IsRefreshing
         {
-            var output = new Label { Text = "" };
-            output.Text = File.ReadAllText(fileName);
+            get { return _isRefreshing; }
+            set
+            {
+                _isRefreshing = value;
+                OnPropertyChanged(nameof(IsRefreshing));
+            }
+        }
+
+        protected void OnPropertyChanged(string propertyName)
+        {
+            if (PropertyChanged != null)
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public ICommand RefreshCommand
+        {
+            get
+            {
+                return new Command(() =>
+                {
+                    IsRefreshing = true;
+
+                    var output = new Label { Text = "" };
+                    output.Text = File.ReadAllText(fileName);
 
 
-            //StreamReader sr; // Creates StreamReader
-            //string Question , Difficulty , Answer;
-            //sr = File.OpenText("QuestionsAnswers.txt");
-            //while (sr.Peek() != -1) //Continue whiel end of file has not been reached
-            //{
-            //    Question + Difficulty + Answer = sr.ReadLine;
-            //    QnA_Model newQuestionEdit = new QnA_Model { Question = Question, Difficulty = Difficulty, Answer = Answer };
-            //}
-            //sr.Close(); // Close stream reader
+                    //StreamReader sr; // Creates StreamReader
+                    //string Question , Difficulty , Answer;
+                    //sr = File.OpenText("QuestionsAnswers.txt");
+                    //while (sr.Peek() != -1) //Continue whiel end of file has not been reached
+                    //{
+                    //    Question + Difficulty + Answer = sr.ReadLine;
+                    //    QnA_Model newQuestionEdit = new QnA_Model { Question = Question, Difficulty = Difficulty, Answer = Answer };
+                    //}
+                    //sr.Close(); // Close stream reader
 
+                    IsRefreshing = false;
+                });
+            }
         }
 
 
+
     }
+
 }

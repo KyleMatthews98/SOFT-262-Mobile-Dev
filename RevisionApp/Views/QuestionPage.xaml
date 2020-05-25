@@ -4,30 +4,36 @@
              x:Class="RevisionApp.Views.QuestionPage"
              xmlns:d="clr-namespace:RevisionApp.ViewModel"
              Title="Flashcard Questions Page">
+        
 
     <StackLayout>
 
         <Label Text="Click and hold a flashcard to delete it" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
-
+        <Label Text="Pull to Refresh is Enabled" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+        
         <Entry Placeholder="Question" Text="{Binding Question}"></Entry>
         <Entry Placeholder="Difficulty" Text="{Binding Difficulty}"></Entry>
         <Entry Placeholder="Answer" Text="{Binding Answer}"></Entry>
         <Button Text="Add" Command="{Binding addNewQuestionCommand}"></Button>
         <Button Text="Edit Selected Card with Details Above" Command="{Binding editNewQuestionCommand}"></Button>
-        <Button Text="Refresh" Command="{Binding Refresh}"></Button>
+        
 
         <Label x:Name="view" Text="Your Saved Items"></Label>
         <Label x:Name="Output" Text=""></Label>
-        
-        <ListView x:Name= "questList"
+
+        <ListView  x:Name= "questList"
+                   x:FieldModifier="public"
                    ItemsSource="{Binding Source={x:Static d:QuestionPageViewModel.QuestionList}}"
                    SelectedItem="{Binding SelectedQuestion}"
                    HasUnevenRows="true"
-                   SeparatorVisibility="Default" SeparatorColor="Black">
-                  
-                   
+                   SeparatorVisibility="Default" SeparatorColor="Black"
+                   IsPullToRefreshEnabled="True"  IsRefreshing="{Binding IsRefreshing}"  RefreshCommand="{Binding RefreshCommand}">
+
+
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -58,7 +64,7 @@
                                     Grid.Column="1"
                                     Grid.RowSpan="2"
                                     HorizontalOptions="End"
-                                    Text="Answer"  Command="{Binding OnItemTapped}" Clicked="show_clicked"  CommandParameter="{Binding .}"></Button>
+                                    Text="Answer"  Command="{Binding OnItemTapped}" Clicked="Answer_clicked"  CommandParameter="{Binding .}"></Button>
                             
                             <Label Grid.Column="0"
                                      Grid.Row="1"
