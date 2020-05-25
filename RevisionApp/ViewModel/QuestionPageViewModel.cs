@@ -3,7 +3,7 @@ using System.Collections.ObjectModel;
 using System.Windows.Input;
 using Xamarin.Forms;
 using System.IO;
-
+using System;
 
 namespace RevisionApp.ViewModel
 {
@@ -21,6 +21,8 @@ namespace RevisionApp.ViewModel
         public string Answer { get; set; }
 
         public QnA_Model SelectedQuestion { get; set; }
+
+        string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "temp.txt");
 
         public QuestionPageViewModel()
         {
@@ -49,10 +51,9 @@ namespace RevisionApp.ViewModel
             QuestionList.Add(newQuestionAdd);
             int indexOfAddedQuestion = QuestionList.IndexOf(newQuestionAdd);
             QuestionList.Move(indexOfAddedQuestion, 0);
+            File.WriteAllText(fileName, Question + Difficulty + Answer);
 
-            StreamWriter swriter = new StreamWriter(@"C:\Users\Kyle\Documents\new\SOFT-262-Mobile-Dev\RevisionApp\Storage\Qa.txt");
-            swriter.WriteLine("yes");
-            swriter.Close();
+
 
         }
 
@@ -76,6 +77,8 @@ namespace RevisionApp.ViewModel
 
         public void Refresh()
         {
+            var output = new Label { Text = "" };
+            output.Text = File.ReadAllText(fileName);
             //StreamReader sr; // Creates StreamReader
             //string Question , Difficulty , Answer;
             //sr = File.OpenText("QuestionsAnswers.txt");
