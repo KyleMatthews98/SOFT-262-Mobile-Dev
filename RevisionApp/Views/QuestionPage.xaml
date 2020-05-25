@@ -25,12 +25,9 @@
                    ItemsSource="{Binding Source={x:Static d:QuestionPageViewModel.QuestionList}}"
                    SelectedItem="{Binding SelectedQuestion}"
                    HasUnevenRows="true"
-                   SeparatorVisibility="Default" SeparatorColor="Black"
-                   IsGroupingEnabled="True" 
-                   GroupDisplayBinding="{Binding GroupName}"
+                   SeparatorVisibility="Default" SeparatorColor="Black">
                   
                    
-            >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -51,14 +48,8 @@
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
 
-                        <Label Text="{Binding Easy}"></Label>
-                            
-                        <Label Text="{Binding Medium}"></Label>
-                            
-                        <Label Text="{Binding Hard}"></Label>
-                            
-                            
-                        <Label Grid.Column="0"
+
+                            <Label Grid.Column="0"
                                    Grid.Row="0"
                                        Text="{Binding Question}"
                                         HorizontalOptions="StartAndExpand"
