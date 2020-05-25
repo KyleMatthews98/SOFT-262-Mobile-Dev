@@ -16,6 +16,7 @@
         <Entry Placeholder="Answer" Text="{Binding Answer}"></Entry>
         <Button Text="Add" Command="{Binding addNewQuestionCommand}"></Button>
         <Button Text="Edit Selected Card with Details Above" Command="{Binding editNewQuestionCommand}"></Button>
+        <Button Text="Refresh" Command="{Binding Refresh}"></Button>
 
 
         <ListView x:Name= "questList"

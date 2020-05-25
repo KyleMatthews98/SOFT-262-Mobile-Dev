@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 using Xamarin.Forms;
+using System.IO;
 
 
 namespace RevisionApp.ViewModel
@@ -66,6 +67,20 @@ namespace RevisionApp.ViewModel
             {
                 await App.Current.MainPage.DisplayAlert("No Flashcard Selected", "You must select a flashcard to edit!", "Gotcha!");
             }
+        }
+
+        public void Refresh()
+        {
+            StreamReader sr; // Creates StreamReader
+            string Question , Difficulty , Answer;
+            sr = File.OpenText("QuestionsAnswers.txt");
+            while (sr.Peek() != -1) //Continue whiel end of file has not been reached
+            {
+                Question + Difficulty + Answer = sr.ReadLine;
+                QnA_Model newQuestionEdit = new QnA_Model { Question = Question, Difficulty = Difficulty, Answer = Answer };
+            }
+            sr.Close(); // Close stream reader
+
         }
 
 
