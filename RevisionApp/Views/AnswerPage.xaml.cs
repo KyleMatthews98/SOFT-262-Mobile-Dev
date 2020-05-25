@@ -9,8 +9,8 @@ namespace RevisionApp.Views
         {
             InitializeComponent();
 
-            QuestionShow.Text = Question;
-            AnswerShow.Text = Answer;
+            QuestionShow.Text = "Question:  " + Question;
+            AnswerShow.Text = "Answer:  " + Answer;
         }
 
         private void btnShow_Clicked(object sender, EventArgs args)

@@ -17,11 +17,6 @@ namespace RevisionApp.Views
 
         }
 
-        private async void OnItemSelected(Object sender, ItemTappedEventArgs e)
-        {
-            var selected = e.Item as QnA_Model;
-            await Navigation.PushAsync(new AnswerPage(selected.Question, selected.Answer));
-        }
 
 
         void OnDelete(object sender, EventArgs e)
@@ -31,6 +26,11 @@ namespace RevisionApp.Views
             DisplayAlert("Deleted Flashcard","The selected Flashcard has been deleted!", "OK");
         }
 
-      
+        async void show_clicked(object sender, EventArgs e)
+        {
+            var qna = (QnA_Model)((Button)sender).BindingContext;
+            await Navigation.PushAsync(new AnswerPage(qna.Question, qna.Answer));
+        }
+
     }
 }

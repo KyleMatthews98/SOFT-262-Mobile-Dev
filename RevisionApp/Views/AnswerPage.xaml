@@ -3,14 +3,11 @@
     <ContentPage.Content>
 
         <StackLayout HorizontalOptions="Center">
-            
-            <Label x:Name="QuestionShow" FontSize="Medium" HorizontalTextAlignment="Center"/>
-            <Label x:Name="AnswerShow" Margin="20,20" FontSize="Large"/>
 
-            <Button x:Name="btnShow" 
-                    Text="Show Answer" 
-                    Clicked="btnShow_Clicked">  
-            </Button>
+            <Label x:Name="QuestionShow"  Margin="20,20" FontSize="Medium" />
+            <Label x:Name="AnswerShow"  Margin="20,20" FontSize="Large"/>
+
+           
             
         </StackLayout>
     </ContentPage.Content>

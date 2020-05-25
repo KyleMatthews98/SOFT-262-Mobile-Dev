@@ -22,8 +22,9 @@
                    ItemsSource="{Binding Source={x:Static d:QuestionPageViewModel.QuestionList}}"
                    SelectedItem="{Binding SelectedQuestion}"
                    HasUnevenRows="true"
-                   SeparatorVisibility="Default" SeparatorColor="Black"
-                   ItemTapped="OnItemSelected">
+                   SeparatorVisibility="Default" SeparatorColor="Black">
+                  
+                   
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -45,13 +46,22 @@
                             </Grid.ColumnDefinitions>
 
 
-                            <Label Grid.Column="1"
+                            <Label Grid.Column="0"
+                                   Grid.Row="0"
                                        Text="{Binding Question}"
-                                       VerticalOptions="End"/>
-                            <Label Grid.Column="1"
-                                       Grid.Row="1"
-                                       VerticalOptions="Start"
-                                       Text="{Binding Difficulty, StringFormat='Difficulty = {0:N}'}"/>
+                                        HorizontalOptions="StartAndExpand"
+                                       VerticalOptions="Start"/>
+                            <Button Grid.Row="0"
+                                    Grid.Column="1"
+                                    Grid.RowSpan="2"
+                                    HorizontalOptions="End"
+                                    Text="Show"  Command="{Binding OnItemTapped}" Clicked="show_clicked"  CommandParameter="{Binding .}"></Button>
+                            
+                            <Label Grid.Column="0"
+                                     Grid.Row="1"
+                                     VerticalOptions="Start"
+                                     HorizontalOptions="StartAndExpand"
+                                     Text="{Binding Difficulty, StringFormat='Difficulty = {0:N}'}"/>
                         </Grid>
                     </ViewCell>
                 </DataTemplate>
