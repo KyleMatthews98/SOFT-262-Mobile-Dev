@@ -4,16 +4,26 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using System.IO;
 using System;
+using System.Collections.Generic;
 
 namespace RevisionApp.ViewModel
 {
-    public class QuestionPageViewModel
+    public class QuestionPageViewModel : List<QnA_Model>
     {
         public ICommand addNewQuestionCommand => new Command(AddQuestAnswers);
 
         public ICommand editNewQuestionCommand => new Command(EditQuestion);
 
         public static ObservableCollection<QnA_Model> QuestionList { get; set; }
+
+        public string GroupName { get; set; }
+
+
+        public QuestionPageViewModel(string groupname, List<QnA_Model> source) : base(source)
+        {
+            GroupName = groupname;
+        }
+   
 
 
         public string Question { get; set; }
@@ -24,9 +34,11 @@ namespace RevisionApp.ViewModel
 
         string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "temp.txt");
 
+        
+
         public QuestionPageViewModel()
         {
-
+  
 
             QuestionList = new ObservableCollection<QnA_Model>
             {
@@ -36,7 +48,7 @@ namespace RevisionApp.ViewModel
                 new QnA_Model { Question = "What is the capital city of India?", Difficulty = "Medium", Answer = "New Delhi" },
                 new QnA_Model { Question = "What is the capital city of Italy?", Difficulty = "Easy", Answer = "Rome" },
                 new QnA_Model { Question = "What is the capital city of Canada?", Difficulty = "Hard", Answer = "Ottawa" },
-                new QnA_Model { Question = "What is the capital city of Russia?", Difficulty = "Easy", Answer = "Moscow" }
+                new QnA_Model { Question = "What is the capital city of Russia?", Difficulty = "Medium", Answer = "Moscow" }
             };
 
 
@@ -79,6 +91,8 @@ namespace RevisionApp.ViewModel
         {
             var output = new Label { Text = "" };
             output.Text = File.ReadAllText(fileName);
+
+
             //StreamReader sr; // Creates StreamReader
             //string Question , Difficulty , Answer;
             //sr = File.OpenText("QuestionsAnswers.txt");
