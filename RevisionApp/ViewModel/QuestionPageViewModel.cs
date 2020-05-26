@@ -61,8 +61,10 @@ namespace RevisionApp.ViewModel
         //    }
         //}
 
-        //public void ReadFromFile()
-        //{
+        public void ReadFromFile()
+        {
+          
+
         //    string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
         //    string FileName = Path.Combine(path, "myfile.txt");
 
@@ -71,7 +73,7 @@ namespace RevisionApp.ViewModel
         //        string content = sr.ReadToEnd();
         //        System.Diagnostics.Debug.WriteLine(content);
         //    }
-        //}
+        }
 
         public void AddQuestAnswers()
         {
@@ -79,27 +81,50 @@ namespace RevisionApp.ViewModel
             QnA_Model newQuestionAdd = new QnA_Model { Question = Question, Difficulty = Difficulty, Answer = Answer };
             QuestionList.Add(newQuestionAdd);
 
-            string filepath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "temp.txt");
-           // newQuestionAdd = newQuestionAdd;
-            XmlSerializer serializer  = new XmlSerializer(typeof(List<QnA_Model>));
-            Stream writer = new FileStream(filepath, FileMode.Create); // Initialises the writer
+           
 
-            serializer.Serialize(writer, newQuestionAdd); // Writes to the file
-            writer.Close();
+            
+
+           // string filepath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "temp.txt");
+           //// newQuestionAdd = newQuestionAdd;
+           // XmlSerializer serializer  = new XmlSerializer(typeof(List<QnA_Model>));
+           // Stream writer = new FileStream(filepath, FileMode.Create); // Initialises the writer
+
+           // serializer.Serialize(writer, Question); // Writes to the file
+           // writer.Close();
+           // now you can elete under me
 
 
 
             int indexOfAddedQuestion = QuestionList.IndexOf(newQuestionAdd);
             QuestionList.Move(indexOfAddedQuestion, 0);
-            
+
+            //QnA_Model qmodel = new QnA_Model();
+          //  qmodel.Question = Question;
+            System.Xml.Serialization.XmlSerializer xmlwriter = new System.Xml.Serialization.XmlSerializer(typeof(QnA_Model));
+            var paths = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "//topicstore.txt";
+            System.IO.FileStream file = System.IO.File.Create(paths);
+
+            xmlwriter.Serialize(file, newQuestionAdd);
+            file.Close();
+
+
+
+            System.Xml.Serialization.XmlSerializer reader =
+              new System.Xml.Serialization.XmlSerializer(typeof(QnA_Model));
+            System.IO.StreamReader fileRead = new System.IO.StreamReader(paths);
+            QnA_Model qmodels = (QnA_Model)reader.Deserialize(file);
+            file.Close();
+
+
 
             //string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "temp.txt");
-           
 
-            
-          //  File.WriteAllText(fileName, Question + Difficulty + Answer);
 
-           
+
+            //  File.WriteAllText(fileName, Question + Difficulty + Answer);
+
+
 
 
         }
