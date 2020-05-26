@@ -1,0 +1,10 @@
+Requirements that we feel that we met!
+
+- User Interface and Navigation
+2:1
+
+- C.R.U.D & Peristence
+2:2
+
+- Software Architecture
+2:1
