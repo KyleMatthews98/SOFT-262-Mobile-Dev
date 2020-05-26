@@ -23,7 +23,9 @@
         
 
         <Label x:Name="view" Text="Your Saved Items"></Label>
-        <Label x:Name="Output" Text=""></Label>
+        <Label x:Name="Ques" Text="{Binding Question}"></Label>
+        <Label x:Name="Diff" Text="{Binding Difficulty}"></Label>
+        <Label x:Name="Ans" Text="{Binding Answer}"></Label>
 
         <ListView  x:Name= "questList"
                    x:FieldModifier="public"

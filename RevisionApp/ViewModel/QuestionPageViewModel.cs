@@ -6,6 +6,8 @@ using System.IO;
 using System;
 using RevisionApp.Views;
 using System.ComponentModel;
+using System.Collections.Generic;
+using System.Xml.Serialization;
 
 namespace RevisionApp.ViewModel
 {
@@ -48,36 +50,48 @@ namespace RevisionApp.ViewModel
 
         }
 
-        public void WriteToFile()
-        {
-            string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            string FileName = Path.Combine(path, "myfile.txt");
+        //public void WriteToFile()
+        //{
+        //    string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+        //    string FileName = Path.Combine(path, "myfile.txt");
 
-            using (var writer = new StreamWriter(FileName, true))
-            {
-                writer.WriteLine("test");
-            }
-        }
+        //    using (var writer = new StreamWriter(FileName, bool append , System.Text.Encoding encoding, int bufferSize))
+        //    {
+        //        writer.WriteLine("test");
+        //    }
+        //}
 
-        public void ReadFromFile()
-        {
-            string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            string FileName = Path.Combine(path, "myfile.txt");
+        //public void ReadFromFile()
+        //{
+        //    string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+        //    string FileName = Path.Combine(path, "myfile.txt");
 
-            using (var sr = new StreamReader(FileName))
-            {
-                string content = sr.ReadToEnd();
-                System.Diagnostics.Debug.WriteLine(content);
-            }
-        }
+        //    using (var sr = new StreamReader(FileName))
+        //    {
+        //        string content = sr.ReadToEnd();
+        //        System.Diagnostics.Debug.WriteLine(content);
+        //    }
+        //}
 
         public void AddQuestAnswers()
         {
         
             QnA_Model newQuestionAdd = new QnA_Model { Question = Question, Difficulty = Difficulty, Answer = Answer };
             QuestionList.Add(newQuestionAdd);
+
+            string filepath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "temp.txt");
+           // newQuestionAdd = newQuestionAdd;
+            XmlSerializer serializer  = new XmlSerializer(typeof(List<QnA_Model>));
+            Stream writer = new FileStream(filepath, FileMode.Create); // Initialises the writer
+
+            serializer.Serialize(writer, newQuestionAdd); // Writes to the file
+            writer.Close();
+
+
+
             int indexOfAddedQuestion = QuestionList.IndexOf(newQuestionAdd);
             QuestionList.Move(indexOfAddedQuestion, 0);
+            
 
             //string fileName = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "temp.txt");
            

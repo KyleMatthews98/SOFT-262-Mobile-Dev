@@ -75,3 +75,4 @@ C:\Users\Kyle\Desktop\thisagain\SOFT-262-Mobile-Dev\RevisionApp\obj\Debug\netsta
 C:\Users\Kyle\Desktop\thisagain\SOFT-262-Mobile-Dev\RevisionApp\obj\Debug\netstandard2.0\RevisionApp.dll
 C:\Users\Kyle\Desktop\thisagain\SOFT-262-Mobile-Dev\RevisionApp\obj\Debug\netstandard2.0\ref\RevisionApp.dll
 C:\Users\Kyle\Desktop\thisagain\SOFT-262-Mobile-Dev\RevisionApp\obj\Debug\netstandard2.0\RevisionApp.pdb
+C:\Users\Kyle\Desktop\thisagain\SOFT-262-Mobile-Dev\RevisionApp\obj\Debug\netstandard2.0\RevisionApp.csprojAssemblyReference.cache
